@@ -6,17 +6,20 @@ const doctors = [
     {
         image: service1,
         name: "Glaucoma",
-        department: "descripción"
+        department: "descripción",
+        link: "/Service",
     },
     {
         image: service2,
         name: "Síndrome del ojo seco",
-        department: "Descripción"
+        department: "Descripción",
+        link: "/Service",
     },
     {
         image: service3,
         name: "Catarata",
-        department: "Descripción"
+        department: "Descripción",
+        link: "/Service",
     },
 ]
 
@@ -28,6 +31,7 @@ const Doctor = () => {
                     key={index}
                     className="flex flex-col gap-3 cursor-pointer transition-transform duration-300 ease-out hover:scale-110"
                 >
+                    <a href={doctor.link}>
                     <div className="w-[310px] h-[348px] overflow-hidden rounded-lg">
                         <img
                             src={doctor.image}
@@ -40,6 +44,7 @@ const Doctor = () => {
                         <h6 className="text-lg font-medium">{doctor.name}</h6>
                         <p className="text-sm text-gray-500">{doctor.department}</p>
                     </div>
+                    </a>
                 </div>
             ))}
         </>
