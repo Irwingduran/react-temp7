@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
         <Navbar/>
-        <div id='home'>
+        <div className='py-16' id='home'>
         <Banner/>
         </div>
         <div id='about'>
