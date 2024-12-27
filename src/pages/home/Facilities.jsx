@@ -1,4 +1,4 @@
-import doctor from "../../assets/images/doc.jpeg";
+import doctor from "../../assets/images/doc2.jpg";
 
 const Facilities = () => {
   return (

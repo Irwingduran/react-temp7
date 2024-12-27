@@ -24,10 +24,10 @@ const Home = () => {
         <Doctors/>
         <Services/>
         </div>
-        <Partners/>
         <VideoComponent/>
         <Contact/>
         <Testimonials/>
+        <Partners/>
         <Footer/>
     </div>
   )
